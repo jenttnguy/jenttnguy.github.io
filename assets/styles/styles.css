@@ -141,6 +141,38 @@ html {
     background-color: #676F21;
 }
 
+.overlay.painting1 {
+    background-color: #ADCB3C;
+}
+
+.overlay.painting2 {
+    background-color: #F0918B;
+}
+
+.overlay.painting3 {
+    background-color: #C9936F;
+}
+
+.overlay.painting4 {
+    background-color: #CC6E90;
+}
+
+.overlay.painting5 {
+    background-color: #A5BDE1;
+}
+
+.overlay.painting6 {
+    background-color: #998F7F;
+}
+
+.overlay.painting7 {
+    background-color: #070809;
+}
+
+.overlay.painting8 {
+    background-color: #B16647;
+}
+
 .work:hover .overlay {
     opacity: 1;
 }
@@ -159,10 +191,16 @@ html {
 
 /*** WORK DETAIL ***/
 #workDetail .img img {
-    width: 100%;
+    width: 50%;
     max-height: 100%;
     
     display: block;
+}
+
+#workDetail .img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #workDetail .workDesc {
@@ -177,7 +215,6 @@ html {
     text-decoration: none;
     color: #192F31;
 }
-
 
 /*** ABOUT ***/
 #image {
@@ -252,6 +289,14 @@ html {
 
     .work {
         margin-bottom: 10%;
+    }
+
+    /** WORK DETAIL **/
+    #workDetail .img img {
+        width: 100%;
+        max-height: 100%;
+        
+        display: block;
     }
 
     /** ABOUT **/
