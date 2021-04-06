@@ -1,0 +1,309 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #FCFBF7;
+
+    scroll-behavior: smooth;
+}
+
+html {
+    margin-top: 4%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+}
+
+/*** FONTS ***/
+html {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #192F31;
+}
+
+#header .link:hover {
+    opacity: 100%;
+}
+
+/*** NAV ***/
+#header .title {
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+#header .link {
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+#header .link a {
+    text-decoration: none;
+    color: #192F31;
+}
+
+#header .current {
+    opacity: 100%;
+}
+
+#header {
+    text-align: center;
+
+    padding-bottom: 4%;
+}
+
+#header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#header .box {
+    width: 20px;
+}
+
+.box {
+    width: 20px;
+}
+
+/*** WORK ***/
+#content {
+    display: flex;
+    flex-direction: row;
+}
+
+#column {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.columnBox {
+    width: 10%;
+}
+
+.work img {
+    width: 100%;
+    max-height: 100%;
+    
+    display: block;
+}
+
+.work {
+    margin-bottom: 10%;
+}
+
+/*** HOVER WORK ***/
+.work {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.overlay.digital1 {
+    background-color: #1C1E66;
+}
+
+.overlay.digital2 {
+    background-color: #183E04;
+}
+
+.overlay.digital3 {
+    background-color: #BF3515;
+}
+
+.overlay.digital4 {
+    background-color: #475815;
+}
+
+.overlay.digital5 {
+    background-color: #8F4B12;
+}
+
+.overlay.digital6 {
+    background-color: #676F21;
+}
+
+.work:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*** WORK DETAIL ***/
+#workDetail .img img {
+    width: 100%;
+    max-height: 100%;
+    
+    display: block;
+}
+
+#workDetail .workDesc {
+    text-align: center;
+}
+
+#back {
+    padding-top: 6%;
+}
+
+#back a{
+    text-decoration: none;
+    color: #192F31;
+}
+
+
+/*** ABOUT ***/
+#image {
+    width: 40%;
+}
+
+#image img {
+    width: 100%;
+    max-width: 100%;
+
+    display: block;
+}
+
+#aboutDesc {
+    width: 60%;
+
+    padding-left: 10%;
+}
+
+#aboutDesc a {
+    text-decoration: none;
+    color: #192F31;
+}
+
+/*** FOOTER ***/
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 6%;
+}
+
+#footer .links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #192F31;
+}
+
+.link1 img, .link2 img {
+    height: 20px;
+}
+
+/*** MOBILE VIEWING ***/
+@media screen and (max-width: 800px) {
+    /** HEADER **/
+    #header {
+        padding-bottom: 10%;
+    }
+
+    /** WORK **/
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columnBox {
+        width: 10%;
+    }
+
+    .work img {
+        width: 100%;
+        max-height: 100%;
+        
+        display: block;
+    }
+
+    .work {
+        margin-bottom: 10%;
+    }
+
+    /** ABOUT **/
+    #image {
+        width: 100%;
+
+        padding-bottom: 10%;
+    }
+
+    #image img {
+        width: 100%;
+        max-width: 100%;
+
+        display: block;
+    }
+
+    #aboutDesc {
+        width: 100%;
+
+        padding-left: 0%;
+    }
+
+    #aboutDesc a {
+        text-decoration: none;
+        color: #192F31;
+    }
+
+    /** FOOTER **/  
+    #footer {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 20%;
+    }
+
+    #footer .links {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding-bottom: 2%;
+    }
+
+    #footer .copyright {
+        text-align: center;
+    }
+}
+
+/**********LARGER DESKTOP VIEWING**********/
+/* tbd */
+@media screen and (max-width: 1600px) {
+
+}
